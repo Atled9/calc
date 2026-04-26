@@ -15,6 +15,8 @@ _e.g. \\*, \\(, and \\)_
 
 ![Implementation of quadratic formula](src/quadratic_expression.png)
 
+![in terminal](src/quadratic_expression_terminal.png)
+
 
 
 

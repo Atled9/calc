@@ -106,7 +106,7 @@ Collection *shunt(Collection *in)
 			push(operators, dequeue(in));
 
 		} else {
-			while(peek(operators) && getp(peek(operators)) != -1) {
+			while(getp(peek(operators)) > getp(peek(in))) {
 				enqueue(out, pop(operators));
 			}
 			push(operators, dequeue(in));
