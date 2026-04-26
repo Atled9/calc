@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #include "token/token.h"
 #include "collections/collections.h"
 
@@ -7,6 +9,8 @@ Collection *shunt(Collection *in);
 
 int main(int argc, char **argv)
 {
+	srand(time(NULL));
+
 	int postfix = 0;
 	int verbose = 0;
 	char **argp = argv + 1;
@@ -24,9 +28,6 @@ int main(int argc, char **argv)
 				case 'v':
 					verbose = 1;
 					break;
-				case 'l':
-					printf("listing currently saved variables\n");
-					break;
 				default:
 					printf("\'%c\' is not a valid option\n", *optp);
 					return 0;
@@ -39,6 +40,10 @@ int main(int argc, char **argv)
 	Collection *in = initQueue();
 
 	while (argp < argv + argc) {
+
+		if (**argp == ',') {
+			argp++;
+		}
 		tokenp = pack(*argp);
 
 		if (!tokenp) {

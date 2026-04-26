@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
+#include <time.h>
+
 
 int isfloat(char *str);
 
@@ -13,6 +15,10 @@ static double mod(double l_operand, double r_operand);
 static double sine(double dummy, double operand);
 static double cosine(double dummy, double operand);
 static double tangent(double dummy, double operand);
+
+static double logarithm(double l_operand, double r_operand);
+static double max(double l_operand, double r_operand);
+static double randint(double l_operand, double r_operand);
 
 typedef struct {
 	union {
@@ -121,6 +127,28 @@ Token *packarg(char *str)
 		token->unary = 1;
 		return token;
 	}
+
+	if (strstr(str, "log")) {
+		token->operator = logarithm;
+		token->precedence = 4;
+		token->associativity = 0;
+		token->unary = 0;
+		return token;
+	}
+	if (strstr(str, "max")) {
+		token->operator = max;
+		token->precedence = 4;
+		token->associativity = 0;
+		token->unary = 0;
+		return token;
+	}
+	if (strstr(str, "rand")) {
+		token->operator = randint;
+		token->precedence = 4;
+		token->associativity = 0;
+		token->unary = 0;
+		return token;
+	}
 	free(token);
 	return NULL;
 }
@@ -204,4 +232,17 @@ static double cosine(double dummy, double operand)
 static double tangent(double dummy, double operand)
 {
 	return tan(operand);
+}
+
+static double logarithm(double l_operand, double r_operand)
+{
+	return (log(r_operand) / log(l_operand));
+}
+static double max(double l_operand, double r_operand)
+{
+	return l_operand > r_operand ? l_operand : r_operand;
+}
+static double randint(double l_operand, double r_operand)
+{
+	return rand() % (int)(r_operand - l_operand) + (int)l_operand;
 }
