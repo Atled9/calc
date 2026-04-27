@@ -7,9 +7,9 @@ _e.g. \\*, \\(, and \\)_
 
 * Basic expression using verbose "-v" option to display postfix notation
 
-![2 + 4 \* 3 - 1](src/basic_expression.png) 
+>![2 + 4 \* 3 - 1](src/basic_expression.png) 
 
-![in terminal](src/basic_expression_terminal.png)
+>![in terminal](src/basic_expression_terminal.png)
 
 * Finding one root of a qudratic expression
 
