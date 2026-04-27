@@ -42,7 +42,53 @@ and a final quantity
 > `$ cmake ../`
 * Build "calc" target binary from Makefile
 > `$ make calc`
-* Optional: move binary into one of your PATH directories
+* _Optional: move binary into one of your PATH directories_
 > `$ mv calc ~/.local/bin`
 
 ![build process on terminal](src/build.png)
+
+## Usage Instructions
+
+* Values are read as doubles and may be input using scientific notation (using e)
+* Values must start with:
+ * \< a number \>
+ * \< sign character \> + \< a number \>
+* _Acceptable value entry examples:_
+ * 0.1
+ * -0.1
+ * +0.1
+ * 1e-1
+* _Unacceptable value entry examples:_
+ * .1
+ * -.1
+ * +.1
+ * e-1
+* All operands, operators, and function names must be separated by whitespace, including commas and parentheses
+* All function parameters must be enclosed in parentheses
+
+* Options:
+ * "-p" = postfix: expression will be entered using postfix notation
+ * "-v" = verbose: postfix expression will be displayed after infix entry 
+
+* Macro Constants:
+ * "PI": pi = 3.141...
+ * "E" : euler's number = 2.718...
+
+* Operators:
+ * +: addition
+ * -: subtraction
+ * \*: multiplication
+ * /: division
+ * %: modulus
+ * ^: exponentiation
+
+* Single-parameter functions:
+ * sin ( in radians ): sine
+ * cos ( in radians ): cosine
+ * tan ( in radians ): tangent
+
+* 2-parameter functions:
+ * log ( base , argument ): logarithm
+ * max ( a , b ): max
+ * rand ( low , high ): generate random number in range [low, high)
+
