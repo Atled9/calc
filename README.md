@@ -13,21 +13,29 @@ _e.g. \\*, \\(, and \\)_
 
 * Finding one root of a qudratic expression
 
-![Implementation of quadratic formula](src/quadratic_expression.png)
+>![Implementation of quadratic formula](src/quadratic_expression.png)
 
-![in terminal](src/quadratic_expression_terminal.png)
+>![in terminal](src/quadratic_expression_terminal.png)
 
 * Verifying pythagorean identity
 
-![pythagorean identity expression](src/pythagorean_identity.png)
+>![pythagorean identity expression](src/pythagorean_identity.png)
 
-![in terminal](src/pythagorean_identity_terminal.png)
+>![in terminal](src/pythagorean_identity_terminal.png)
 
 * Get a length of time, given an exponential growth rate, an initial quantity 
 and a final quantity
 
-![Exponential growth expression](src/exponential_growth.png)
+>![Exponential growth expression](src/exponential_growth.png)
 
-![in terminal](src/exponential_growth_terminal.png)
+>![in terminal](src/exponential_growth_terminal.png)
 
 ### Build Instructions
+
+* Clone [this](https://github.com/Atled9/calc) repository
+> `git clone https://github.com/Atled9/calc`
+* Enter the cloned repository
+* Make and enter build directory
+* Run cmake for CMakeLists.txt file in parent directory
+* Build "calc" target binary from Makefile
+* Optional: move binary into one of your PATH directories
