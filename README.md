@@ -17,6 +17,12 @@ _e.g. \\*, \\(, and \\)_
 
 ![in terminal](src/quadratic_expression_terminal.png)
 
+* Verifying pythagorean identity
+
+![pythagorean identity expression](src/pythagorean_identity.png)
+
+![in terminal](src/pythagorean_identity_terminal.png)
+
 
 
 
