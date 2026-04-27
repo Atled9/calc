@@ -23,7 +23,7 @@ _e.g. \\*, \\(, and \\)_
 
 >![in terminal](src/pythagorean_identity_terminal.png)
 
-* Get a length of time, given an exponential growth rate, an initial quantity 
+* Get a length of time given an exponential growth rate, an initial quantity 
 and a final quantity
 
 >![Exponential growth expression](src/exponential_growth.png)
