@@ -33,9 +33,16 @@ and a final quantity
 ### Build Instructions
 
 * Clone [this](https://github.com/Atled9/calc) repository
-> `git clone https://github.com/Atled9/calc`
+> `$ git clone https://github.com/Atled9/calc`
 * Enter the cloned repository
+> `$ cd calc`
 * Make and enter build directory
+> `$ mkdir build; cd build`
 * Run cmake for CMakeLists.txt file in parent directory
+> `$ cmake ../`
 * Build "calc" target binary from Makefile
+> `$ make calc`
 * Optional: move binary into one of your PATH directories
+> `$ mv calc ~/.local/bin`
+
+![build process on terminal](src/build.png)
