@@ -7,28 +7,28 @@ _e.g. \\*, \\(, and \\)_
 
 * Basic expression using verbose "-v" option to display postfix notation
 
->![2 + 4 \* 3 - 1](src/basic_expression.png) 
+>![2 + 4 \* 3 - 1](images_for_README/basic_expression.png) 
 
->![in terminal](src/basic_expression_terminal.png)
+>![in terminal](images_for_README/basic_expression_terminal.png)
 
 * Finding one root of a qudratic expression
 
->![Implementation of quadratic formula](src/quadratic_expression.png)
+>![Implementation of quadratic formula](images_for_README/quadratic_expression.png)
 
->![in terminal](src/quadratic_expression_terminal.png)
+>![in terminal](images_for_README/quadratic_expression_terminal.png)
 
 * Verifying pythagorean identity
 
->![pythagorean identity expression](src/pythagorean_identity.png)
+>![pythagorean identity expression](images_for_README/pythagorean_identity.png)
 
->![in terminal](src/pythagorean_identity_terminal.png)
+>![in terminal](images_for_README/pythagorean_identity_terminal.png)
 
 * Get a length of time given an exponential growth rate, an initial quantity 
 and a final quantity
 
->![Exponential growth expression](src/exponential_growth.png)
+>![Exponential growth expression](images_for_README/exponential_growth.png)
 
->![in terminal](src/exponential_growth_terminal.png)
+>![in terminal](images_for_README/exponential_growth_terminal.png)
 
 ### Build Instructions
 
@@ -45,7 +45,7 @@ and a final quantity
 * _Optional: move binary into one of your PATH directories_
 > `$ mv calc ~/.local/bin`
 
-![build process on terminal](src/build.png)
+![build process on terminal](images_for_README/build.png)
 
 ## Usage Instructions
 
